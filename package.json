@@ -1,0 +1,41 @@
+{
+  "name": "xmpp-ftw-fanout",
+  "version": "0.1.0",
+  "description": "fanout plugin for XMPP-FTW",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec --recursive ./test/lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fanout/xmpp-ftw-fanout.git"
+  },
+  "keywords": [
+    "fanout",
+    "xmpp",
+    "xml",
+    "translate"
+  ],
+  "author": "Lloyd Watkin <lloyd@evilprofesssor.co.uk>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/fanout/xmpp-ftw-fanout/issues"
+  },
+  "dependencies": {
+    "ltx": "*",
+    "xmpp-ftw-item-parser": "*",
+    "xmpp-ftw-pubsub": "*"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "should": "~1.2.2",
+    "xmpp-ftw": "*"
+  },
+  "peerDependencies": {
+    "xmpp-ftw": "0.x"
+  }
+}
