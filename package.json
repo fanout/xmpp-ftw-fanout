@@ -1,6 +1,6 @@
 {
   "name": "xmpp-ftw-fanout",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "fanout plugin for XMPP-FTW",
   "main": "index.js",
   "directories": {
