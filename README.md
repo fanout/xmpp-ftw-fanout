@@ -1,9 +1,9 @@
 xmpp-ftw-fanout
 ====================
 
-A [fanout](http://fanout.com) plugin for XMPP-FTW.
+A [fanout](http://fanout.io) plugin for XMPP-FTW.
 
-https://github.com/lloydwatkin/xmpp-ftw.git
+https://github.com/xmpp-ftw/xmpp-ftw.git
 https://xmpp-ftw.jit.su
 
 # Manual
@@ -12,7 +12,7 @@ Manual page is available here: [fanout for XMPP-FTW](https://xmpp-ftw.jit.su/man
 
 # More....
 
-See the XMPP-FTW demo repository - https://github.com/lloydwatkin/xmpp-ftw-demo
+See the XMPP-FTW demo repository - https://github.com/xmpp-ftw/xmpp-ftw-demo
 
 # Build status
 
