@@ -28,7 +28,7 @@
   "dependencies": {
     "ltx": "*",
     "xmpp-ftw-item-parser": "*",
-    "xmpp-ftw-pubsub": "*"
+    "xmpp-ftw-pubsub": "~1.0.0"
   },
   "devDependencies": {
     "mocha": "~1.8.1",
@@ -39,6 +39,6 @@
     "grunt-mocha-cli": "~1.4.0"
   },
   "peerDependencies": {
-    "xmpp-ftw": "0.x"
+    "xmpp-ftw": "1.x"
   }
 }
