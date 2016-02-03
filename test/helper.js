@@ -1,3 +1,5 @@
+'use strict';
+
 var ltx = require('ltx')
   , fs = require('fs')
   , Event = require('events').EventEmitter
@@ -10,13 +12,20 @@ exports.getStanza = function(file) {
     return ltx.parse(stanzaStr)
 }
 
-var Eventer = function() {}
-Eventer.prototype.__proto__ = Event.prototype
-Eventer.prototype.send = function(stanza) {
+var XmppEventer = function() {}
+XmppEventer.prototype = new Event()
+XmppEventer.prototype.send = function(stanza) {
     this.emit('stanza', stanza.root())
 }
-exports.Eventer = Eventer
+exports.XmppEventer = XmppEventer
+
+var SocketEventer = function() {}
+SocketEventer.prototype = new Event()
+SocketEventer.prototype.send = function(event, data, callback) {
+    this.emit(event, data, callback)
+}
+exports.SocketEventer = SocketEventer
 
 exports.failingItemParser = function() {
-   throw new Error('FAIL!')
+    throw new Error('FAIL!')
 }
